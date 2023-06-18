@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ana{
+    background-color: rgb(241, 234, 226);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.img{
+    background: linear-gradient(217deg,rgba(31, 29, 29, 0.6),rgb(31, 29, 29,0.6)90.8%),url(img/filmrulo.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.img1{
+    background-color: rgba(255, 255, 255, 0.836);
+    background-image: url(img/frame.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    z-index:1;
+    
+
+}
+
+.img3{
+    width: 40%;
+    background-image: url(img/enes.jpg);
+    border-radius: 20% 20% ;
+    background-repeat: no-repeat;
+    background-size: 50% 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.orta h1{
+    margin-top: 15%;
+    color: rgb(252, 255, 80);
+    font-size: 700%;
+    font-weight: bold;
+    width:100%;
+    text-align:center;
+}
+
+.orta h2{
+    color: rgb(212, 0, 255);
+    font-size: 400%;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.007);
+    color: rgb(255, 252, 80);
+    cursor: pointer;
+    outline: none;
+    border: double;
+    border-radius: 25px;
+    
+    
+}
+
+.buttons button:hover{
+    
+    background-color: rgb(129, 58, 129);
+    transition: .5s;
+}
+
+
+.btnhk .buttons button{
+    color: rgb(0, 0, 0);
+}
+
+.btnhk .buttons button:hover{
+    
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.btnyt{
+    background-color: rgb(30, 23, 36);
+    }
+
+.btnyt .buttons button{
+    color: rgb(66, 63, 248);
+}
+
+.btnyt .buttons button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.col-3 img{
+     width: 10%;
+    height: 50%;
+    border-radius: 10%; 
+    margin-left: 10%; 
+}
+
+.col-3 p{
+    color: white;
+    font-size: larger;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: inline-flex;
+}
+
+.cards p{
+    color: white;
+}
+
+
+.btnpr button{
+    color: rgb(248, 63, 63);
+
+}
+
+.btnpr button:hover{
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+
+/* anasayfa responsive */
+
+@media screen and (max-width: 767px){
+    .ana .img{
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .orta{
+        height: 5% !important;
+    }
+    
+    .orta h1 {
+        text-align: center;
+        margin-top: 15%;
+        font-size: 400%;
+   }
+    .orta h2{
+        font-size: 300%;
+    }
+
+    .ana .buttons{
+        position: relative;
+        flex-direction: column;
+        
+        
+    }
+    .ana .buttons button{
+        width: 100%;
+        margin: 1%;
+     }
+    
+}
+
+@media screen and (max-width: 376px){
+
+   .ana .img{
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;        
+    }
+
+    .orta{
+        height: 10% !important;
+    }
+    
+    .orta h1 {
+        text-align: center;
+        margin-top: 40%;
+        font-size: 300%;
+   }
+    .orta h2{
+        font-size: 200%;
+    }
+
+    .ana .buttons{
+        position: relative;
+        flex-direction: column;
+        
+        
+    }
+    .ana .buttons button{
+        width: 100%;
+        margin: 2%;
+     }
+}
+
+/* hakkımda responsive */
+
+@media screen and (max-width: 1023px){
+    .img3{
+        margin-top: 5%;
+        background-size: 70% 60%;
+    }
+
+    .text-center{
+        font-size: 65%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 767px){
+   .ana{
+    height: auto;
+   }
+    .img1{
+        height: 50% !important;
+    }
+    .img3{
+        
+        background-size: 50% 70%;
+    }
+
+    .text-center{
+        font-size: 45%;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 425px){
+
+         
+        .img1{
+            height: 50% !important;
+        }
+        .img3{
+            margin-top: 25%;
+            background-size: 70% 60%;
+        }
+    
+        .text-center{
+            font-size: 40%;
+            
+        }
+
+}
+
+@media screen and (max-width: 375px){
+    
+    .text-center{
+        
+        font-size: 33%
+    }
+}
+
+/* yetenekler responsive */
+
+@media screen and (max-width: 778px){
+    .yms{
+        
+        margin-top: 5% !important;
+    }
+    
+
+}
+@media screen and (max-width: 425px){
+    .cards .card{
+        width: 100% !important;
+        height: 10% !important;
+    }
+   
+    
+}
+
+/* projeler responsive */
+
+@media screen and (max-width: 768px){
+    .slider{
+        width: 100% !important;
+        height: 100% !important;
+
+    }
+}
