@@ -1,8 +1,12 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+}
+
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
+
 
 .ana{
     background-color: rgb(241, 234, 226);
@@ -133,11 +137,7 @@
 /* anasayfa responsive */
 
 @media screen and (max-width: 767px){
-    .ana .img{
-        height: 100%;
-        width: 100%;
-        background-size: 100% 100%;
-    }
+    
     .orta{
         height: 5% !important;
     }
@@ -164,13 +164,27 @@
     
 }
 
+@media screen and (max-width: 512px){
+    .ana{
+    
+        height: 100% !important;
+        
+
+    }
+
+    .orta{
+        padding: 5% !important;
+    }
+   
+        
+ }
+
+
+
+
 @media screen and (max-width: 376px){
 
-   .ana .img{
-        height: 100%;
-        width: 100%;
-        background-size: 100% 100%;        
-    }
+    
 
     .orta{
         height: 10% !important;
@@ -212,9 +226,7 @@
 }
 
 @media screen and (max-width: 767px){
-   .ana{
-    height: auto;
-   }
+   
     .img1{
         height: 50% !important;
     }
@@ -272,7 +284,18 @@
         width: 100% !important;
         height: 10% !important;
     }
-   
+    .col-4{
+        width:100% !important ;
+        height:100% !important ;
+    }
+    .col-4 .bg-dark{
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }  
+    .rmt{
+        margin-top: 15% !important;
+        margin-bottom: 15% !important;
+    }
     
 }
 
@@ -282,6 +305,13 @@
     .slider{
         width: 100% !important;
         height: 100% !important;
+    }
+    
+}
 
+
+@media screen and (max-width: 512px){
+    .pms{
+        padding: 15% !important;
     }
 }
